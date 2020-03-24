@@ -1,0 +1,794 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hardware>
+	<general_information>
+		<credits>h-node project</credits>
+		<link>h-node.org</link>
+		<date>2020-03-23 22:04:18</date>
+		<license>The contents of this page are in the Public Domain. (see the CC0 page at http://creativecommons.org/publicdomain/zero/1.0/ for detailed information). Anyone is free to copy, modify, publish, use, sell, or distribute the text for any purpose, commercial or non-commercial, and by any means.</license>
+	</general_information>
+	<device>
+		<id>906</id>
+		<type>RAID-adapter</type>
+		<model_name>Adaptec (formerly DPT) PCI Bridge (rev 02)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1044:a500</vendorid_productid>
+		<vendor>Adaptec-formerly-DPT</vendor>
+		<kernel_libre></kernel_libre>
+		<distribution>trisquel_5_5 </distribution>
+		<year>2002</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>PCI_I2O</driver>
+		<description><![CDATA[[code][root@newton ~]# lspci -nnk
+03:01.0 PCI bridge [0604]: Adaptec (formerly DPT) PCI Bridge [1044:a500] (rev 02)
+03:01.1 I2O [0e00]: Adaptec (formerly DPT) SmartRAID V Controller [1044:a501] (rev 02)
+	Subsystem: Adaptec (formerly DPT) 2400A UDMA Four Channel [1044:c05a]
+	Kernel driver in use: PCI_I2O
+	Kernel modules: i2o_core[/code]
+
+[code][root@newton ~]# lspci -vmmnn
+Device:	03:01.1
+Class:	I2O [0e00]
+Vendor:	Adaptec (formerly DPT) [1044]
+Device:	SmartRAID V Controller [a501]
+SVendor:	Adaptec (formerly DPT) [1044]
+SDevice:	2400A UDMA Four Channel [c05a]
+Rev:	02
+ProgIf:	01[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/906/Adaptec--formerly-DPT--PCI-Bridge--rev-02-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/906</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/906</created_by>
+	</device>
+	<device>
+		<id>969</id>
+		<type>RAID-adapter</type>
+		<model_name>LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1000:0079</vendorid_productid>
+		<vendor>LSI-Logic---Symbios-Logic</vendor>
+		<kernel_libre>3.0.0-17-generic</kernel_libre>
+		<distribution>trisquel_5_5 </distribution>
+		<year>2011</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>megaraid_sas</driver>
+		<description><![CDATA[lspci -nnk
+[code]02:00.0 RAID bus controller [0104]: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] [1000:0079] (rev 05)
+	Subsystem: Intel Corporation RAID Controller RS2BL040 [8086:9260]
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas
+[/code]
+
+lspci -vmmnn
+[code]Slot:	02:00.0
+Class:	RAID bus controller [0104]
+Vendor:	LSI Logic / Symbios Logic [1000]
+Device:	MegaRAID SAS 2108 [Liberator] [0079]
+SVendor:	Intel Corporation [8086]
+SDevice:	RAID Controller RS2BL040 [9260]
+Rev:	05
+[/code]
+
+lspci -v
+[code]02:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05)
+	Subsystem: Intel Corporation RAID Controller RS2BL040
+	Flags: bus master, fast devsel, latency 0, IRQ 17
+	I/O ports at 3000 [size=256]
+	Memory at c1180000 (64-bit, non-prefetchable) [size=16K]
+	Memory at c1140000 (64-bit, non-prefetchable) [size=256K]
+	Expansion ROM at c1100000 [disabled] [size=256K]
+	Capabilities: &lt;access denied&gt;
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas[/code]
+]]></description>
+		<link>https://h-node.org/raidadapters/view/en/969/LSI-Logic---Symbios-Logic-MegaRAID-SAS-2108--Liberator---rev-05-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/969</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/969</created_by>
+	</device>
+	<device>
+		<id>1054</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation 82801 SATA Controller (RAID mode) (rev 02)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>8086:2822</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>3.0.0-17-generic</kernel_libre>
+		<distribution>trisquel_5_5 </distribution>
+		<year>2007</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>ahci</driver>
+		<description><![CDATA[[code]lspci -nnpk
+00:1f.2 RAID bus controller [0104]: Intel Corporation 82801 SATA Controller [RAID mode] [8086:2822] (rev 02)
+[/code]
+
+[code]lspci -vmmnn
+Slot:	00:1f.2
+Class:	RAID bus controller [0104]
+Vendor:	Intel Corporation [8086]
+Device:	82801 SATA Controller [RAID mode] [2822]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [514d]
+Rev:	02
+
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1054/Intel-Corporation-82801-SATA-Controller--RAID-mode---rev-02-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1054</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1054</created_by>
+	</device>
+	<device>
+		<id>1079</id>
+		<type>RAID-adapter</type>
+		<model_name>ULi Electronics Inc. ULi 5287 SATA (rev 02)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>10b9:5287</vendorid_productid>
+		<vendor>ULi-Electronics-Inc.</vendor>
+		<kernel_libre>3.0.0-17-generic</kernel_libre>
+		<distribution>trisquel_5_5 </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>sata_uli</driver>
+		<description><![CDATA[[p]lspci -nnpk[/p]
+[code]00:1f.1 RAID bus controller [0104]: ULi Electronics Inc. ULi 5287 SATA [10b9:5287] (rev 02)[/code]
+[p]lspci -vmmnn[/p]
+[code]Slot:	00:1f.1
+Class:	RAID bus controller [0104]
+Vendor:	ULi Electronics Inc. [10b9]
+Device:	ULi 5287 SATA [5287]
+SVendor:	ASUSTeK Computer Inc. [1043]
+SDevice:	Device [8056]
+Rev:	02
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1079/ULi-Electronics-Inc--ULi-5287-SATA--rev-02-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1079</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1079</created_by>
+	</device>
+	<device>
+		<id>1097</id>
+		<type>RAID-adapter</type>
+		<model_name>LSI Logic / Symbios Logic SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] (rev 03)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1000:0072</vendorid_productid>
+		<vendor>LSI-Logic---Symbios-Logic</vendor>
+		<kernel_libre></kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>pciback</driver>
+		<description><![CDATA[lspci -nnpk
+[code]0d:00.0 Serial Attached SCSI controller [0107]: LSI Logic / Symbios Logic SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] [1000:0072] (rev 03)[/code]
+
+lspci -vmmnn
+[code]Slot:	0d:00.0
+Class:	Serial Attached SCSI controller [0107]
+Vendor:	LSI Logic / Symbios Logic [1000]
+Device:	SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] [0072]
+SVendor:	LSI Logic / Symbios Logic [1000]
+SDevice:	Device [3050]
+PhySlot:	3
+Rev:	03[/code]
+
+lspci -v
+[code]0d:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] (rev 03)
+	Subsystem: LSI Logic / Symbios Logic Device 3050
+	Physical Slot: 3
+	Flags: bus master, fast devsel, latency 0, IRQ 24
+	I/O ports at 9000 [size=256]
+	Memory at df03c000 (64-bit, non-prefetchable) [size=16K]
+	Memory at df040000 (64-bit, non-prefetchable) [size=256K]
+	Expansion ROM at df080000 [disabled] [size=512K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [68] Express Endpoint, MSI 00
+	Capabilities: [d0] Vital Product Data
+	Capabilities: [a8] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [c0] MSI-X: Enable- Count=15 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Power Budgeting &lt;?&gt;
+	Capabilities: [150] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Kernel driver in use: pciback
+	Kernel modules: mpt2sas[/code]
+]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1097/LSI-Logic---Symbios-Logic-SAS2008-PCI-Express-Fusion-MPT-SAS-2--Falcon---rev-03-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1097</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1097</created_by>
+	</device>
+	<device>
+		<id>1109</id>
+		<type>RAID-adapter</type>
+		<model_name>LSI Logic / Symbios Logic MegaRAID SAS 2008 [Falcon] (rev 03)</model_name>
+		<other_names><![CDATA[Intel RS2WC080]]></other_names>
+		<vendorid_productid>1000:0073</vendorid_productid>
+		<vendor>LSI-Logic---Symbios-Logic</vendor>
+		<kernel_libre>3.2.0-38-generic</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>2013</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver>megaraid_sas</driver>
+		<description><![CDATA[The adapter has GNU/Linux drivers on the accompanying CD, but probably not 100% free.
+ 
+[p]lspci -nnk[/p]
+[code]01:00.0 RAID bus controller [0104]: LSI Logic / Symbios Logic MegaRAID SAS 2008 [Falcon] [1000:0073] (rev 03)
+	Subsystem: Intel Corporation RAID Controller RS2WC080 [8086:9240]
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas
+[/code]
+
+lspci -vmmnn
+[code]Slot:	01:00.0
+Class:	RAID bus controller [0104]
+Vendor:	LSI Logic / Symbios Logic [1000]
+Device:	MegaRAID SAS 2008 [Falcon] [0073]
+SVendor:	Intel Corporation [8086]
+SDevice:	RAID Controller RS2WC080 [9240]
+Rev:	03
+[/code]
+
+lspci -v
+[code]01:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2008 [Falcon] (rev 03)
+	Subsystem: Intel Corporation RAID Controller RS2WC080
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	I/O ports at e000 [size=256]
+	Memory at f7e60000 (64-bit, non-prefetchable) [size=16K]
+	Memory at f7e00000 (64-bit, non-prefetchable) [size=256K]
+	Expansion ROM at f7e40000 [disabled] [size=128K]
+	Capabilities: &lt;access denied&gt;
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas
+[/code]
+]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1109/LSI-Logic---Symbios-Logic-MegaRAID-SAS-2008--Falcon---rev-03-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1109</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1109</created_by>
+	</device>
+	<device>
+		<id>1120</id>
+		<type>RAID-adapter</type>
+		<model_name>Integrated Technology Express, Inc. IT8212 Dual channel ATA RAID controller (rev 13)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1283:8212</vendorid_productid>
+		<vendor>Integrated-Technology-Express-Inc.</vendor>
+		<kernel_libre>3.2.0-38-generic-pae</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>2005</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver>pata_it821x</driver>
+		<description><![CDATA[[p]This fake RAID adapter is integrated on the [b]Gigabyte GA-I945PL-G[/b] motherboard.[/p] 
+
+[p]lspci -nnk[/p]
+[code]04:06.0 RAID bus controller [0104]: Integrated Technology Express, Inc. IT8212 Dual channel ATA RAID controller [1283:8212] (rev 13)
+	Subsystem: Integrated Technology Express, Inc. IT/ITE8212 Dual channel ATA RAID controller [1283:0001]
+	Kernel driver in use: pata_it821x
+	Kernel modules: pata_it821x
+[/code]
+
+lspci -vmmnn
+[code]Slot:	04:06.0
+Class:	RAID bus controller [0104]
+Vendor:	Integrated Technology Express, Inc. [1283]
+Device:	IT8212 Dual channel ATA RAID controller [8212]
+SVendor:	Integrated Technology Express, Inc. [1283]
+SDevice:	IT/ITE8212 Dual channel ATA RAID controller [0001]
+Rev:	13
+[/code]
+
+lspci -v
+[code]04:06.0 RAID bus controller: Integrated Technology Express, Inc. IT8212 Dual channel ATA RAID controller (rev 13)
+	Subsystem: Integrated Technology Express, Inc. IT/ITE8212 Dual channel ATA RAID controller
+	Flags: bus master, 66MHz, medium devsel, latency 64, IRQ 22
+	I/O ports at 9410 [size=8]
+	I/O ports at 9800 [size=4]
+	I/O ports at 9c10 [size=8]
+	I/O ports at a000 [size=4]
+	I/O ports at a400 [size=16]
+	[virtual] Expansion ROM at 80020000 [disabled] [size=128K]
+	Capabilities: [80] Power Management version 2
+	Kernel driver in use: pata_it821x
+	Kernel modules: pata_it821x
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1120/Integrated-Technology-Express--Inc--IT8212-Dual-channel-ATA-RAID-controller--rev-13-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1120</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1120</created_by>
+	</device>
+	<device>
+		<id>1228</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation 82801 Mobile SATA Controller [RAID mode] (rev 04)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>8086:282a</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>3.2.0-38-generic</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver></driver>
+		<description><![CDATA[[b]lspci -vnnmm[/b]
+[code]Slot:	00:1f.2
+Class:	RAID bus controller [0104]
+Vendor:	Intel Corporation [8086]
+Device:	82801 Mobile SATA Controller [RAID mode] [282a]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [179b]
+Rev:	04
+[/code]
+
+[b]lspci -nnk[/b]
+[code]00:1f.2 RAID bus controller [0104]: Intel Corporation 82801 Mobile SATA Controller [RAID mode] [8086:282a] (rev 04)
+	Subsystem: Hewlett-Packard Company Device [103c:179b]
+	Kernel driver in use: ahci[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1228/Intel-Corporation-82801-Mobile-SATA-Controller--RAID-mode---rev-04-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1228</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1228</created_by>
+	</device>
+	<device>
+		<id>1264</id>
+		<type>RAID-adapter</type>
+		<model_name>VIA Technologies, Inc. VT6421 IDE/SATA Controller (rev 50)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1106:3249</vendorid_productid>
+		<vendor>VIA-Technologies-Inc.</vendor>
+		<kernel_libre>3.2.0-38-generic</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>2006</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>sata_via</driver>
+		<description><![CDATA[[b][p]lspci -vnnmm[/p][/b]
+[p][/p]
+[p]Slot:	05:07.0[/p]
+[p]Class:	RAID bus controller [0104][/p]
+[p]Vendor:	VIA Technologies, Inc. [1106][/p]
+[p]Device:	VT6421 IDE/SATA Controller [3249][/p]
+[p]SVendor:	Fujitsu Technology Solutions [1734][/p]
+[p]SDevice:	Device [10ac][/p]
+[p]Rev:	50[/p]
+[p][/p]
+[b][p]lspci -nnk[/p][/b]
+[p][/p]
+[p]05:07.0 RAID bus controller [0104]: VIA Technologies, Inc. VT6421 IDE/SATA Controller [1106:3249] (rev 50)[/p]
+[p]	Subsystem: Fujitsu Technology Solutions Device [1734:10ac][/p]
+[p]	Kernel driver in use: sata_via[/p]
+[p]	Kernel modules: sata_via[/p]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1264/VIA-Technologies--Inc--VT6421-IDE-SATA-Controller--rev-50-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1264</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1264</created_by>
+	</device>
+	<device>
+		<id>1359</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation 6 Series/C200 Series Chipset Family SATA RAID Controller (rev 05)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>8086:1c04</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>3.2.0-38-generic-pae</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>2012</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>megasr</driver>
+		<description><![CDATA[[p]lspci -nnpk[/p]
+[code]00:1f.2 RAID bus controller [0104]: Intel Corporation 6 Series/C200 Series Chipset Family SATA RAID Controller [8086:1c04] (rev 05)[/code]
+[p]lspci -vmmnn[/p]
+[code]Slot:	00:1f.2
+Class:	RAID bus controller [0104]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family SATA RAID Controller [1c04]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	05
+[/code]
+[p]lspci -v[/p]
+[code]00:1f.2 RAID bus controller: Intel Corporation 6 Series/C200 Series Chipset Family SATA RAID Controller (rev 05)
+	Subsystem: Intel Corporation Device 7270
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 21
+	I/O ports at 4090 [size=8]
+	I/O ports at 4080 [size=4]
+	I/O ports at 4070 [size=8]
+	I/O ports at 4060 [size=4]
+	I/O ports at 4020 [size=32]
+	Memory at c1b40000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: &lt;access denied&gt;
+	Kernel driver in use: megasr
+	Kernel modules: megasr, ahci
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1359/Intel-Corporation-6-Series-C200-Series-Chipset-Family-SATA-RAID-Controller--rev-05-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1359</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1359</created_by>
+	</device>
+	<device>
+		<id>1400</id>
+		<type>RAID-adapter</type>
+		<model_name>3ware Inc 9650SE SATA-II RAID PCIe (rev 01)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>13c1:1004</vendorid_productid>
+		<vendor>3ware-Inc</vendor>
+		<kernel_libre>3.2.0-4-amd64</kernel_libre>
+		<distribution>debian_7 </distribution>
+		<year>not-specified</year>
+		<interface>PCI-E</interface>
+		<it_works>no</it_works>
+		<driver>3w_9xxx</driver>
+		<description><![CDATA[If the controller has already been configured, existing units can be accessed using the 3w-9xxx driver.  However, there are currently no free software tools for checking the status of the drives, assigning drives to units, creating/destroying/migrating units, or configuring the many advanced features of the controller.]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1400/3ware-Inc-9650SE-SATA-II-RAID-PCIe--rev-01-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1400</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1400</created_by>
+	</device>
+	<device>
+		<id>1404</id>
+		<type>RAID-adapter</type>
+		<model_name>SiI 0649 Ultra ATA/100 PCI to ATA Host Controller</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1095:0649</vendorid_productid>
+		<vendor>Silicon-Image-Inc.</vendor>
+		<kernel_libre>3.14.12-1</kernel_libre>
+		<distribution>debian_unstable </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>pata_cmd64x</driver>
+		<description><![CDATA[]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1404/SiI-0649-Ultra-ATA-100-PCI-to-ATA-Host-Controller</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1404</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1404</created_by>
+	</device>
+	<device>
+		<id>1735</id>
+		<type>RAID-adapter</type>
+		<model_name>VT6415 PATA IDE Host Controller</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1106:0415</vendorid_productid>
+		<vendor>VIA-Technologies-Inc.</vendor>
+		<kernel_libre>3.13.0-39</kernel_libre>
+		<distribution>trisquel_7_0 </distribution>
+		<year>not-specified</year>
+		<interface>PCI-E</interface>
+		<it_works>yes</it_works>
+		<driver>pata_via</driver>
+		<description><![CDATA[lspci -vvvnnk
+[code]
+03:00.0 IDE interface [0101]: VIA Technologies, Inc. VT6415 PATA IDE Host Controller [1106:0415] (prog-if 85 [Master SecO PriO])
+	Subsystem: ASUSTeK Computer Inc. Motherboard [1043:838f]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: I/O ports at e040 [size=8]
+	Region 1: I/O ports at e030 [size=4]
+	Region 2: I/O ports at e020 [size=8]
+	Region 3: I/O ports at e010 [size=4]
+	Region 4: I/O ports at e000 [size=16]
+	Expansion ROM at f7d00000 [disabled] [size=64K]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [70] MSI: Enable- Count=1/1 Maskable+ 64bit+
+		Address: 0000000000000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express (v1) Legacy Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s &lt;64ns, L1 &lt;1us
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s &lt;1us, L1 &lt;64us
+			ClockPM- Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk- DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [100 v1] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		AERCap:	First Error Pointer: 14, GenCap+ CGenEn- ChkCap+ ChkEn-
+	Capabilities: [130 v1] Device Serial Number 00-40-63-ff-ff-63-40-00
+	Kernel driver in use: pata_via
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1735/VT6415-PATA-IDE-Host-Controller</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1735</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1735</created_by>
+	</device>
+	<device>
+		<id>1778</id>
+		<type>RAID-adapter</type>
+		<model_name>Silicon Image, Inc. SiI 3114 [SATALink/SATARaid] Serial ATA Controller (rev 02)</model_name>
+		<other_names><![CDATA[Mainboard Asus A8N-SLI Deluxe]]></other_names>
+		<vendorid_productid>1095:3114</vendorid_productid>
+		<vendor>Silicon-Image-Inc.</vendor>
+		<kernel_libre>3.13.0-39-lowlatency</kernel_libre>
+		<distribution>trisquel_7_0 </distribution>
+		<year>2004</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>sata_sil</driver>
+		<description><![CDATA[lspci -nnpk
+[code]05:0a.0 RAID bus controller [0104]: Silicon Image, Inc. SiI 3114 [SATALink/SATARaid] Serial ATA Controller [1095:3114] (rev 02)[/code]
+
+lspci -vmmnn
+[code]Class:	RAID bus controller [0104]
+Vendor:	Silicon Image, Inc. [1095]
+Device:	SiI 3114 [SATALink/SATARaid] Serial ATA Controller [3114]
+SVendor:	ASUSTeK Computer Inc. [1043]
+SDevice:	A8N-SLI Deluxe/Premium Mainboard [8167]
+Rev:	02
+[/code]
+
+lspci -v
+[code]05:0a.0 RAID bus controller: Silicon Image, Inc. SiI 3114 [SATALink/SATARaid] Serial ATA Controller (rev 02)
+	Subsystem: ASUSTeK Computer Inc. A8N-SLI Deluxe/Premium Mainboard
+	Flags: bus master, 66MHz, medium devsel, latency 32, IRQ 19
+	I/O ports at 9000 [size=8]
+	I/O ports at 9400 [size=4]
+	I/O ports at 9800 [size=8]
+	I/O ports at 9c00 [size=4]
+	I/O ports at a000 [size=16]
+	Memory at d4018000 (32-bit, non-prefetchable) [size=1K]
+	Expansion ROM at d3000000 [disabled] [size=512K]
+	Capabilities: [60] Power Management version 2
+	Kernel driver in use: sata_sil
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1778/Silicon-Image--Inc--SiI-3114--SATALink-SATARaid--Serial-ATA-Controller--rev-02-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1778</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1778</created_by>
+	</device>
+	<device>
+		<id>1893</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation C600/X79 series chipset SATA RAID Controller (rev 05)</model_name>
+		<other_names><![CDATA[Dell Precision Tower 7810]]></other_names>
+		<vendorid_productid>8086:2826</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>3.13.0-39-lowlatency</kernel_libre>
+		<distribution>trisquel_7_0 </distribution>
+		<year>2017</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver>ahci</driver>
+		<description><![CDATA[[code][b]lspci -d 8086:2826 -nnpk[/b][/code]
+[code]00:1f.2 RAID bus controller [0104]: Intel Corporation C600/X79 series chipset SATA RAID Controller [8086:2826] (rev 05)[/code]
+
+[code]
+[b]lspci -d 8086:2826 -v[/b][/code]
+[code]00:1f.2 RAID bus controller: Intel Corporation C600/X79 series chipset SATA RAID Controller (rev 05)
+	Subsystem: Dell Device 0618
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 90
+	I/O ports at 9090 [size=8]
+	I/O ports at 9080 [size=4]
+	I/O ports at 9070 [size=8]
+	I/O ports at 9060 [size=4]
+	I/O ports at 9000 [size=32]
+	Memory at f3136000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: &lt;access denied&gt;
+	Kernel driver in use: ahci[/code]
+
+[code][b]lspci -d 8086:2826 -vmmn[/b][/code]
+[code]Slot:	00:1f.2
+Class:	0104
+Vendor:	8086
+Device:	2826
+SVendor:	1028
+SDevice:	0618
+Rev:    	05[/code]
+
+]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1893/Intel-Corporation-C600-X79-series-chipset-SATA-RAID-Controller--rev-05-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1893</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1893</created_by>
+	</device>
+	<device>
+		<id>1921</id>
+		<type>RAID-adapter</type>
+		<model_name> Samsung Electronics Co Ltd Device (rev 01)</model_name>
+		<other_names><![CDATA[ASUS RS100-E9-P/2]]></other_names>
+		<vendorid_productid>144d:a802</vendorid_productid>
+		<vendor>Samsung-Electronics-Co-Ltd</vendor>
+		<kernel_libre>3.13.0-39-lowlatency</kernel_libre>
+		<distribution>trisquel_7_0 </distribution>
+		<year>2017</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver> nvme</driver>
+		<description><![CDATA[[b][code]lspci -nnk[/code][/b]
+[code]06:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd Device [144d:a802] (rev 01)
+        Subsystem: Samsung Electronics Co Ltd Device [144d:a801]
+        Kernel driver in use: nvme[/code]
+
+[b][code]lspci -v[/code][/b]
+[code]06:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd Device a802 (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd Device a801
+	Flags: bus master, fast devsel, latency 0, IRQ 19
+	Memory at de100000 (64-bit, non-prefetchable) [size=16K]
+	I/O ports at a000 [size=256]
+	Capabilities: &lt;access denied&gt;
+	Kernel driver in use: nvme[/code]
+
+[code][b]lspci -vmmnn[/b]
+Slot:	06:00.0
+Class:	Non-Volatile memory controller [0108]
+Vendor:	Samsung Electronics Co Ltd [144d]
+Device:	Device [a802]
+SVendor:	Samsung Electronics Co Ltd [144d]
+SDevice:	Device [a801]
+Rev:	01
+ProgIf:	02
+
+
+[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1921/-Samsung-Electronics-Co-Ltd-Device--rev-01-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1921</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1921</created_by>
+	</device>
+	<device>
+		<id>1929</id>
+		<type>RAID-adapter</type>
+		<model_name>LSI Logic / Symbios Logic MegaRAID SAS-3 3108 (Invader) (rev 02)</model_name>
+		<other_names><![CDATA[Intel Server Board S2600WFT]]></other_names>
+		<vendorid_productid>1000:005d</vendorid_productid>
+		<vendor>LSI-Logic---Symbios-Logic</vendor>
+		<kernel_libre>3.13.0-39-lowlatency</kernel_libre>
+		<distribution>trisquel_7_0 </distribution>
+		<year>2018</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>megaraid_sas</driver>
+		<description><![CDATA[[code][b]lspci -nnk[/b][/code]
+[code]5e:00.0 RAID bus controller [0104]: LSI Logic / Symbios Logic MegaRAID SAS-3 3108 [Invader] [1000:005d] (rev 02)
+	Subsystem: Intel Corporation Device [8086:351e]
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas
+[/code]
+[code]
+[b]lspci -vmmnn[/b][/code]
+[code]Slot:	5e:00.0
+Class:	RAID bus controller [0104]
+Vendor:	LSI Logic / Symbios Logic [1000]
+Device:	MegaRAID SAS-3 3108 [Invader] [005d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [351e]
+Rev:	02
+NUMANode:	0[/code]
+
+[code][b]lspci -v[/b][/code]
+[code]5e:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS-3 3108 [Invader] (rev 02)
+	Subsystem: Intel Corporation Device 351e
+	Flags: bus master, fast devsel, latency 0, IRQ 46, NUMA node 0
+	I/O ports at 8000 [size=256]
+	Memory at b8900000 (64-bit, non-prefetchable) [size=64K]
+	Memory at b8800000 (64-bit, non-prefetchable) [size=1M]
+	Expansion ROM at &lt;ignored&gt; [disabled]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [68] Express Endpoint, MSI 00
+	Capabilities: [a8] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [c0] MSI-X: Enable+ Count=97 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [1e0] #19
+	Capabilities: [1c0] Power Budgeting &lt;?&gt;
+	Capabilities: [148] Alternative Routing-ID Interpretation (ARI)
+	Kernel driver in use: megaraid_sas
+	Kernel modules: megaraid_sas[/code]
+]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1929/LSI-Logic---Symbios-Logic-MegaRAID-SAS-3-3108--Invader---rev-02-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1929</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1929</created_by>
+	</device>
+	<device>
+		<id>1948</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation Sunrise Point-LP SATA Controller (AHCI mode) (rev 21)</model_name>
+		<other_names><![CDATA[Intel NUC7i3BNHXF]]></other_names>
+		<vendorid_productid>8086:9d03</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>4.9.0-6-amd64</kernel_libre>
+		<distribution>debian_9 </distribution>
+		<year>2018</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver>ahci</driver>
+		<description><![CDATA[[b]N.B. As of May 2018, drives connected to this controller are not &quot;seen&quot; by default in RedHat-based distros, during installation.[/b]
+
+[b][code]lspci -nnk[/code][/b]
+[code]00:17.0 SATA controller [0106]: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] [8086:9d03] (rev 21)
+	Subsystem: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] [8086:2068]
+	Kernel driver in use: ahci
+	Kernel modules: ahci[/code]
+
+[b][code]lspci -vmmnn[/code][/b]
+[code]Slot:	00:17.0
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	Sunrise Point-LP SATA Controller [AHCI mode] [9d03]
+SVendor:	Intel Corporation [8086]
+SDevice:	Sunrise Point-LP SATA Controller [AHCI mode] [2068]
+Rev:	21
+ProgIf:	01[/code]
+
+[b]
+[code]lspci -nnpk[/code][/b]
+[code]00:17.0 SATA controller [0106]: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] [8086:9d03] (rev 21)[/code]
+
+[b][code]lspci -v[/code][/b]
+[code]00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21) (prog-if 01 [AHCI 1.0])
+	Subsystem: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 129
+	Memory at dc348000 (32-bit, non-prefetchable) [size=8K]
+	Memory at dc34c000 (32-bit, non-prefetchable) [size=256]
+	I/O ports at f090 [size=8]
+	I/O ports at f080 [size=4]
+	I/O ports at f060 [size=32]
+	Memory at dc34b000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [70] Power Management version 3
+	Capabilities: [a8] SATA HBA v1.0
+	Kernel driver in use: ahci
+	Kernel modules: ahci[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1948/Intel-Corporation-Sunrise-Point-LP-SATA-Controller--AHCI-mode---rev-21-</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1948</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1948</created_by>
+	</device>
+	<device>
+		<id>1951</id>
+		<type>RAID-adapter</type>
+		<model_name>Intel Corporation Device</model_name>
+		<other_names><![CDATA[NVME controller]]></other_names>
+		<vendorid_productid>8086:2522</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>4.9.0-6-amd64</kernel_libre>
+		<distribution>debian_9 </distribution>
+		<year>2018</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver>nvme</driver>
+		<description><![CDATA[N.B. As of May 2018, NVME drives of this type are not &quot;seen&quot; by default in RedHat-based distros, during installation (at lest on Intel NUC7i3BNHXF)
+
+
+[b][code]lspci -nnk[/code][/b]
+[code]3c:00.0 Non-Volatile memory controller [0108]: Intel Corporation Device [8086:2522]
+	Subsystem: Intel Corporation Device [8086:3806]
+	Kernel driver in use: nvme
+	Kernel modules: nvme[/code]
+
+[b][code]lspci -nnpk[/code][/b]
+[code]3c:00.0 Non-Volatile memory controller [0108]: Intel Corporation Device [8086:2522][/code]
+
+[b][code]lspci -vmmnn[/code][/b]
+[code]Slot:	3c:00.0
+Class:	Non-Volatile memory controller [0108]
+Vendor:	Intel Corporation [8086]
+Device:	Device [2522]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [3806]
+ProgIf:	02
+NUMANode:	0[/code]
+[b]
+[code]lspci -v[/code][/b]
+[code]3c:00.0 Non-Volatile memory controller: Intel Corporation Device 2522 (prog-if 02 [NVM Express])
+	Subsystem: Intel Corporation Device 3806
+	Flags: bus master, fast devsel, latency 0, IRQ 16, NUMA node 0
+	Memory at dc010000 (64-bit, non-prefetchable) [size=16K]
+	Memory at dc000000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI-X: Enable+ Count=9 Masked-
+	Capabilities: [60] Express Endpoint, MSI 00
+	Capabilities: [a0] MSI: Enable- Count=1/16 Maskable+ 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [150] Virtual Channel
+	Capabilities: [180] Power Budgeting &lt;?&gt;
+	Capabilities: [190] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [2a0] #19
+	Capabilities: [2d0] Latency Tolerance Reporting
+	Capabilities: [310] L1 PM Substates
+	Kernel driver in use: nvme
+	Kernel modules: nvme[/code]]]></description>
+		<link>https://h-node.org/raidadapters/view/en/1951/Intel-Corporation-Device</link>
+		<permalink>https://h-node.org/raidadapters/view/en/1951</permalink>
+		<created_by>https://h-node.org/raidadapters/history/en/1951</created_by>
+	</device>
+</hardware>
+

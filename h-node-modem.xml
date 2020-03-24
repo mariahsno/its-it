@@ -1,0 +1,740 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hardware>
+	<general_information>
+		<credits>h-node project</credits>
+		<link>h-node.org</link>
+		<date>2020-03-23 22:03:49</date>
+		<license>The contents of this page are in the Public Domain. (see the CC0 page at http://creativecommons.org/publicdomain/zero/1.0/ for detailed information). Anyone is free to copy, modify, publish, use, sell, or distribute the text for any purpose, commercial or non-commercial, and by any means.</license>
+	</general_information>
+	<device>
+		<id>458</id>
+		<type>modem</type>
+		<model_name>Xilinx Corporation Device 0300</model_name>
+		<other_names><![CDATA[Traverse Technologies Solos ADSL2+ PCI
+]]></other_names>
+		<vendorid_productid>10ee:0300</vendorid_productid>
+		<vendor>Xilinx-Corporation</vendor>
+		<kernel_libre>2.6.35-28-generic</kernel_libre>
+		<distribution>trisquel_4_5 </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>solos_pci</driver>
+		<description><![CDATA[[p]I successfully connected to the Internet with this device and pppd with pppoatm.so loaded, and the connection then used to add this entry to h-node.[/p]
+
+[code]trisquel@trisquel:~$ uname -a
+Linux trisquel 2.6.35-28-generic #50trisquel2-Ubuntu SMP Tue May 3 02:42:36 UTC 2011 x86_64 GNU/Linux
+
+trisquel@trisquel:~$ lspci -vvnnd 10ee:0300 
+04:08.0 ATM network controller [0203]: Xilinx Corporation Device [10ee:0300]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+	Latency: 32
+	Interrupt: pin A routed to IRQ 20
+	Region 0: Memory at 90118000 (32-bit, non-prefetchable) [size=128]
+	Region 1: Memory at 90110000 (32-bit, non-prefetchable) [size=32K]
+	Kernel driver in use: solos
+	Kernel modules: solos-pci
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/458/Xilinx-Corporation-Device-0300</link>
+		<permalink>https://h-node.org/modems/view/en/458</permalink>
+		<created_by>https://h-node.org/modems/history/en/458</created_by>
+	</device>
+	<device>
+		<id>512</id>
+		<type>modem</type>
+		<model_name>Conexant Systems Inc. HSF 56k Data/Fax Modem</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>14f1:2f20</vendorid_productid>
+		<vendor>Conexant-Systems-Inc.</vendor>
+		<kernel_libre></kernel_libre>
+		<distribution>trisquel_5_0 </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[]]></description>
+		<link>https://h-node.org/modems/view/en/512/Conexant-Systems-Inc--HSF-56k-Data-Fax-Modem</link>
+		<permalink>https://h-node.org/modems/view/en/512</permalink>
+		<created_by>https://h-node.org/modems/history/en/512</created_by>
+	</device>
+	<device>
+		<id>533</id>
+		<type>modem</type>
+		<model_name>Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC&#039;97 Modem Controller (rev 01)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>8086:24c6</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>2.6.38-11-generic, 3.0.0-17-generic</kernel_libre>
+		<distribution>trisquel_5_0 , trisquel_5_5 </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[[p]Revision 03 does not work.[/p]
+
+[p]lspci -vmmnn[/p]
+[code]
+Slot:	00:1f.6
+Class:	Modem [0703]
+Vendor:	Intel Corporation [8086]
+Device:	82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC&#039;97 Modem Controller [24c6]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [3084]
+Rev:	03
+[/code]
+
+[p]lspci -nnk[/p]
+[code]
+00:1f.6 Modem [0703]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC&#039;97 Modem Controller [8086:24c6] (rev 03)
+	Subsystem: Hewlett-Packard Company Device [103c:3084]
+	Kernel modules: snd-intel8x0m
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/533/Intel-Corporation-82801DB-DBL-DBM--ICH4-ICH4-L-ICH4-M--AC-97-Modem-Controller--rev-01-</link>
+		<permalink>https://h-node.org/modems/view/en/533</permalink>
+		<created_by>https://h-node.org/modems/history/en/533</created_by>
+	</device>
+	<device>
+		<id>598</id>
+		<type>modem</type>
+		<model_name>Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) AC97 Modem Controller (rev 03)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>8086:266d</vendorid_productid>
+		<vendor>Intel-Corporation</vendor>
+		<kernel_libre>3.0.0-17-generic</kernel_libre>
+		<distribution>trisquel_5_5 </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>no</it_works>
+		<driver>snd-intel8x0m</driver>
+		<description><![CDATA[Integrated in the Dell Latitude D610 (PP11L) notebook.
+
+[p]lspci -nnk[/p]
+[code]00:1e.3 Modem [0703]: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) AC&#039;97 Modem Controller [8086:266d] (rev 03)
+	Subsystem: Conexant Systems, Inc. Device [14f1:5423]
+	Kernel modules: snd-intel8x0m
+[/code]
+
+[p]lspci -vmmnn[/p]
+[code]Slot:	00:1e.3
+Class:	Modem [0703]
+Vendor:	Intel Corporation [8086]
+Device:	82801FB/FBM/FR/FW/FRW (ICH6 Family) AC&#039;97 Modem Controller [266d]
+SVendor:	Conexant Systems, Inc. [14f1]
+SDevice:	Device [5423]
+Rev:	03
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/598/Intel-Corporation-82801FB-FBM-FR-FW-FRW--ICH6-Family--AC97-Modem-Controller--rev-03-</link>
+		<permalink>https://h-node.org/modems/view/en/598</permalink>
+		<created_by>https://h-node.org/modems/history/en/598</created_by>
+	</device>
+	<device>
+		<id>602</id>
+		<type>modem</type>
+		<model_name>Alcatel Telecom SpeedTouch ISDN or ADSL Modem</model_name>
+		<other_names><![CDATA[Thomson SpeedTouch 330 USB modem (H/W rev. 4.00)
+]]></other_names>
+		<vendorid_productid>06b9:4061</vendorid_productid>
+		<vendor>Alcatel-Telecom</vendor>
+		<kernel_libre>2.6.38-11-generic</kernel_libre>
+		<distribution>trisquel_5_0 </distribution>
+		<year>2007</year>
+		<interface>USB</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[The modem was provided by Romanian ISP ROMTELECOM, as part of the Clicknet Express service, around 2007. Please see details at [a]http://linux-usb.sourceforge.net/SpeedTouch/fedora/index.html[/a]]]></description>
+		<link>https://h-node.org/modems/view/en/602/Alcatel-Telecom-SpeedTouch-ISDN-or-ADSL-Modem</link>
+		<permalink>https://h-node.org/modems/view/en/602</permalink>
+		<created_by>https://h-node.org/modems/history/en/602</created_by>
+	</device>
+	<device>
+		<id>1312</id>
+		<type>modem</type>
+		<model_name>LSI Corporation Venus Modem (V90, 56KFlex)</model_name>
+		<other_names><![CDATA[Actiontec PM560LKI]]></other_names>
+		<vendorid_productid>11c1:0480</vendorid_productid>
+		<vendor>LSI-Corporation</vendor>
+		<kernel_libre> 3.2.0-57-generic-pae</kernel_libre>
+		<distribution>trisquel_6_0 </distribution>
+		<year>1999</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[This dial-up modem did not work &quot;out of the box&quot; on my system, although others in the past have reported (on different web sites) they were able to get it working on their Linux systems (in the past.) While it&#039;s possible that one can get this working with enough know how and configuration changes, the inexperienced user will most likely not be able to do this, from a &quot;plug it in, turn it on and after a few easy steps, start using it&quot; standpoint. Old instructions (from 1999) on how to get this modem working can be found here:
+
+http://linuxmafia.com/faq/Hardware/PCImodems.html
+
+Also, I&#039;m guessing 1999 is the year of commercialization, although I&#039;m not completely sure.
+
+This modem is unique in the sense that it is, from what I understand, a true hardware modem. These are rare in PCI format.
+
+Hope this is helpful...]]></description>
+		<link>https://h-node.org/modems/view/en/1312/LSI-Corporation-Venus-Modem--V90--56KFlex-</link>
+		<permalink>https://h-node.org/modems/view/en/1312</permalink>
+		<created_by>https://h-node.org/modems/history/en/1312</created_by>
+	</device>
+	<device>
+		<id>1660</id>
+		<type>modem</type>
+		<model_name>TRENDnet TFM-561U 56K USB Phone/Internet/Fax Modem</model_name>
+		<other_names><![CDATA[Conexant Systems (Rockwell), Inc.]]></other_names>
+		<vendorid_productid>0572:1329</vendorid_productid>
+		<vendor>Conexant-Systems-Rockwell-Inc.</vendor>
+		<kernel_libre></kernel_libre>
+		<distribution>debian_testing </distribution>
+		<year>not-specified</year>
+		<interface>USB</interface>
+		<it_works>yes</it_works>
+		<driver>cdc_acm</driver>
+		<description><![CDATA[Tested with Debian 8. This modem will show up as /dev/ttyACM0.
+Tested for sending a fax (using efax-gtk), dialing/AT commands (using minicom).
+]]></description>
+		<link>https://h-node.org/modems/view/en/1660/TRENDnet-TFM-561U-56K-USB-Phone-Internet-Fax-Modem</link>
+		<permalink>https://h-node.org/modems/view/en/1660</permalink>
+		<created_by>https://h-node.org/modems/history/en/1660</created_by>
+	</device>
+	<device>
+		<id>2020</id>
+		<type>modem</type>
+		<model_name>ZTE WCDMA Technologies MSM</model_name>
+		<other_names><![CDATA[M-Life 4G Wireless Router ML0674B]]></other_names>
+		<vendorid_productid>19d2:0193</vendorid_productid>
+		<vendor>ZTE-WCDMA-Technologies-MSM</vendor>
+		<kernel_libre></kernel_libre>
+		<distribution>debian_9 </distribution>
+		<year>2019</year>
+		<interface>USB</interface>
+		<it_works>yes</it_works>
+		<driver></driver>
+		<description><![CDATA[The modem is a small box that may be either self-powered (internal battery) or powered via USB. The computer will connect to it via wireless.
+
+
+[b][code]lsusb -v -d 19d2:0193[/code][/b]
+
+[code]Bus 002 Device 007: ID 19d2:0193 ZTE WCDMA Technologies MSM 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  idVendor           0x19d2 ZTE WCDMA Technologies MSM
+  idProduct          0x0193 
+  bcdDevice            2.33
+  iManufacturer           2 ZXIC,Incorporated
+  iProduct                4 ZXIC Mobile Boardband
+  iSerial                 5 0123456789ABCDEF
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           32
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          3 ZXIC Configuration
+    bmAttributes         0xc0
+      Self Powered
+    MaxPower              500mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass         8 Mass Storage
+      bInterfaceSubClass      6 SCSI
+      bInterfaceProtocol     80 Bulk-Only
+      iInterface              1 Mass Storage
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x01  EP 1 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               1
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0001
+  Self Powered[/code]
+]]></description>
+		<link>https://h-node.org/modems/view/en/2020/ZTE-WCDMA-Technologies-MSM</link>
+		<permalink>https://h-node.org/modems/view/en/2020</permalink>
+		<created_by>https://h-node.org/modems/history/en/2020</created_by>
+	</device>
+	<device>
+		<id>2060</id>
+		<type>modem</type>
+		<model_name>Rockwell International HCF 56k Data/Fax/Voice/Spkp (w/Handset) Modem (rev 01)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>127a:1025</vendorid_productid>
+		<vendor>Rockwell-International</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[[p]Two cards were tested, they have the same lspci output and don&#039;t bring up any kernel modules.[/p]
+[p]lspci -vvnnk[/p]
+[code]03:02.0 Communication controller [0780]: Rockwell International HCF 56k Data/Fax/Voice/Spkp (w/Handset) Modem [127a:1025] (rev 01)
+        Subsystem: Rockwell International HCF 56k Data/Fax/Voice/Spkp (w/Handset) Modem [127a:1025]
+        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 32
+        Interrupt: pin A routed to IRQ 15
+        Region 0: Memory at febf0000 (32-bit, non-prefetchable) [size=64K]
+        Region 1: I/O ports at ec00 [size=8]
+        Capabilities: [40] Power Management version 2
+                Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2060/Rockwell-International-HCF-56k-Data-Fax-Voice-Spkp--w-Handset--Modem--rev-01-</link>
+		<permalink>https://h-node.org/modems/view/en/2060</permalink>
+		<created_by>https://h-node.org/modems/history/en/2060</created_by>
+	</device>
+	<device>
+		<id>2061</id>
+		<type>modem</type>
+		<model_name>Conexant Systems, Inc. HSF 56k HSFi Modem (rev 01)</model_name>
+		<other_names><![CDATA[Dynalink 56PMi]]></other_names>
+		<vendorid_productid>14f1:2f00</vendorid_productid>
+		<vendor>Conexant-Systems-Inc.</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[lspci -vvnnk
+[code]03:02.0 Communication controller [0780]: Conexant Systems, Inc. HSF 56k HSFi Modem [14f1:2f00] (rev 01)
+        Subsystem: Conexant Systems, Inc. Dynalink 56PMi [14f1:2004]
+        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 32
+        Interrupt: pin A routed to IRQ 15
+        Region 0: Memory at febf0000 (32-bit, non-prefetchable) [size=64K]
+        Region 1: I/O ports at ec00 [size=8]
+        Capabilities: [40] Power Management version 2
+                Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2061/Conexant-Systems--Inc--HSF-56k-HSFi-Modem--rev-01-</link>
+		<permalink>https://h-node.org/modems/view/en/2061</permalink>
+		<created_by>https://h-node.org/modems/history/en/2061</created_by>
+	</device>
+	<device>
+		<id>2062</id>
+		<type>modem</type>
+		<model_name>LSI Corporation V.92 56K WinModem (rev 03)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>11c1:048c</vendorid_productid>
+		<vendor>LSI-Corporation</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[lspci -vvnnk
+[code]03:02.0 Communication controller [0780]: LSI Corporation V.92 56K WinModem [11c1:048c] (rev 03)
+        Subsystem: LSI Corporation V.92 56K WinModem [11c1:044c]
+        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 32 (63000ns min, 3500ns max)
+        Interrupt: pin A routed to IRQ 15
+        Region 0: Memory at febffc00 (32-bit, non-prefetchable) [size=256]
+        Region 1: I/O ports at ec00 [size=8]
+        Region 2: I/O ports at e800 [size=256]
+        Capabilities: [f8] Power Management version 2
+                Flags: PMEClk- DSI+ D1- D2+ AuxCurrent=160mA PME(D0-,D1-,D2+,D3hot+,D3cold+)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2062/LSI-Corporation-V-92-56K-WinModem--rev-03-</link>
+		<permalink>https://h-node.org/modems/view/en/2062</permalink>
+		<created_by>https://h-node.org/modems/history/en/2062</created_by>
+	</device>
+	<device>
+		<id>2065</id>
+		<type>modem</type>
+		<model_name>Analog Devices SM56 PCI modem</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>11d4:1805</vendorid_productid>
+		<vendor>Analog-Devices</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[lspci -vvnnk
+[code]03:02.0 Communication controller [0780]: Analog Devices SM56 PCI modem [11d4:1805]
+        Subsystem: Analog Devices SM56 PCI modem [11d4:1805]
+        Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 32 (250ns min, 63750ns max)
+        Interrupt: pin A routed to IRQ 15
+        Region 0: Memory at fdfffc00 (32-bit, prefetchable) [size=256]
+        Capabilities: [dc] Power Management version 2
+                Flags: PMEClk- DSI- D1- D2+ AuxCurrent=0mA PME(D0+,D1-,D2+,D3hot+,D3cold+)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2065/Analog-Devices-SM56-PCI-modem</link>
+		<permalink>https://h-node.org/modems/view/en/2065</permalink>
+		<created_by>https://h-node.org/modems/history/en/2065</created_by>
+	</device>
+	<device>
+		<id>2069</id>
+		<type>modem</type>
+		<model_name>Motorola Wildcard X100P</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1057:5608</vendorid_productid>
+		<vendor>Motorola</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>PCI</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[lspci -vvnnk
+[code]03:02.0 Communication controller [0780]: Motorola Wildcard X100P [1057:5608]
+        Subsystem: Motorola Wildcard X100P [1057:0000]
+        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 32 (32000ns max)
+        Interrupt: pin A routed to IRQ 15
+        Region 0: I/O ports at e800 [size=256]
+        Region 1: Memory at febef000 (32-bit, non-prefetchable) [size=4K]
+        Capabilities: [40] Power Management version 2
+                Flags: PMEClk- DSI+ D1- D2+ AuxCurrent=55mA PME(D0+,D1-,D2+,D3hot+,D3cold+)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2069/Motorola-Wildcard-X100P</link>
+		<permalink>https://h-node.org/modems/view/en/2069</permalink>
+		<created_by>https://h-node.org/modems/history/en/2069</created_by>
+	</device>
+	<device>
+		<id>2093</id>
+		<type>modem</type>
+		<model_name>Ours Technology, Inc. 006</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>0ea0:2108</vendorid_productid>
+		<vendor>Ours-Technology-Inc.</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>USB</interface>
+		<it_works>no</it_works>
+		<driver></driver>
+		<description><![CDATA[[p]lsusb -v[/p]
+[code]
+Bus 001 Device 006: ID 0ea0:2108 Ours Technology, Inc. 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  idVendor           0x0ea0 Ours Technology, Inc.
+  idProduct          0x2108 
+  bcdDevice            1.00
+  iManufacturer           1 Jargy   
+  iProduct                2 EasySuite       
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x0027
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              200mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           3
+      bInterfaceClass         8 Mass Storage
+      bInterfaceSubClass      6 SCSI
+      bInterfaceProtocol     80 Bulk-Only
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0002  1x 2 bytes
+        bInterval               1
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0000
+  (Bus Powered)
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2093/Ours-Technology--Inc--006</link>
+		<permalink>https://h-node.org/modems/view/en/2093</permalink>
+		<created_by>https://h-node.org/modems/history/en/2093</created_by>
+	</device>
+	<device>
+		<id>2098</id>
+		<type>modem</type>
+		<model_name>VIA Technologies, Inc. AC&#039;97 Modem Controller (rev 80)</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>1106:3068</vendorid_productid>
+		<vendor>VIA-Technologies-Inc.</vendor>
+		<kernel_libre>5.1.6-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>not-specified</interface>
+		<it_works>yes</it_works>
+		<driver>snd_via82xx_modem</driver>
+		<description><![CDATA[[p]lspci -vvnnk[/p]
+[code]
+00:11.6 Communication controller [0780]: VIA Technologies, Inc. AC&#039;97 Modem Controller [1106:3068] (rev 80)
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+	Interrupt: pin C routed to IRQ 22
+	Region 0: I/O ports at dc00 [size=256]
+	Capabilities: [d0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: snd_via82xx_modem
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2098/VIA-Technologies--Inc--AC-97-Modem-Controller--rev-80-</link>
+		<permalink>https://h-node.org/modems/view/en/2098</permalink>
+		<created_by>https://h-node.org/modems/history/en/2098</created_by>
+	</device>
+	<device>
+		<id>2111</id>
+		<type>modem</type>
+		<model_name>PCTel Inc HSP MicroModem 56 (rev 02)</model_name>
+		<other_names><![CDATA[PCTel Inc HSP MicroModem 56 [Hayes/16750]]]></other_names>
+		<vendorid_productid>134d:7892</vendorid_productid>
+		<vendor>PCTel-Inc</vendor>
+		<kernel_libre>5.2.5-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>2004</year>
+		<interface>PCI</interface>
+		<it_works>yes</it_works>
+		<driver>serial</driver>
+		<description><![CDATA[[p]lspci -vvnnk[/p]
+[code]03:02.0 Modem [0703]: PCTel Inc HSP MicroModem 56 [134d:7892] (rev 02) (prog-if 04 [Hayes/16750])
+        Subsystem: PCTel Inc HSP MicroModem 56 [134d:0001]
+        Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Interrupt: pin A routed to IRQ 23
+        Region 0: I/O ports at ec00 [size=64]
+        Capabilities: [40] Power Management version 2
+                Flags: PMEClk- DSI+ D1- D2+ AuxCurrent=55mA PME(D0+,D1-,D2+,D3hot+,D3cold+)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+        Kernel driver in use: serial
+[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2111/PCTel-Inc-HSP-MicroModem-56--rev-02-</link>
+		<permalink>https://h-node.org/modems/view/en/2111</permalink>
+		<created_by>https://h-node.org/modems/history/en/2111</created_by>
+	</device>
+	<device>
+		<id>2137</id>
+		<type>modem</type>
+		<model_name>Conexant Systems (Rockwell), Inc. AccessRunner ADSL Modem</model_name>
+		<other_names><![CDATA[]]></other_names>
+		<vendorid_productid>0572:cafe</vendorid_productid>
+		<vendor>Conexant-Systems-Rockwell-Inc.</vendor>
+		<kernel_libre>5.4.2-gnu-1</kernel_libre>
+		<distribution>parabola </distribution>
+		<year>not-specified</year>
+		<interface>USB</interface>
+		<it_works>yes</it_works>
+		<driver></driver>
+		<description><![CDATA[[p]lsusb -v[/p]
+[code]Bus 001 Device 002: ID 0572:cafe Conexant Systems (Rockwell), Inc. AccessRunner ADSL Modem
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  idVendor           0x0572 Conexant Systems (Rockwell), Inc.
+  idProduct          0xcafe AccessRunner ADSL Modem
+  bcdDevice            0.01
+  iManufacturer           1 -
+  iProduct                2 ADSL USB MODEM
+  iSerial                 3 67882636
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x0043
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xa0
+      (Bus Powered)
+      Remote Wakeup
+    MaxPower              500mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           7
+      bInterfaceClass         0 
+      bInterfaceSubClass      0 
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x01  EP 1 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            2
+	          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            2
+	  Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x84  EP 4 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0008  1x 8 bytes
+        bInterval             200
+can&#039;t get debug descriptor: Resource temporarily unavailable
+Device Status:     0x0001
+  Self Powered[/code]
+[p]hwinfo --usb[/p]
+[code]
+03: USB 00.0: 0000 Unclassified device
+  [Created at usb.122]
+  Unique ID: cLrx.RBKnh+_LzeD
+  Parent ID: k4bc.rKOBlHXr+aF
+  SysFS ID: /devices/pci0000:00/0000:00:07.2/usb1/1-2/1-2:1.0
+  SysFS BusID: 1-2:1.0
+  Hardware Class: unknown
+  Model: &quot;Conexant Systems (Rockwell) AccessRunner ADSL Modem&quot;
+  Hotplug: USB
+  Vendor: usb 0x0572 &quot;Conexant Systems (Rockwell), Inc.&quot;
+  Device: usb 0xcafe &quot;AccessRunner ADSL Modem&quot;
+  Revision: &quot;0.01&quot;
+  Serial ID: &quot;67882636&quot;
+  Speed: 12 Mbps
+  Module Alias: &quot;usb:v0572pCAFEd0001dc00dsc00dp00ic00isc00ip00in00&quot;
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #4 (Hub)[/code]]]></description>
+		<link>https://h-node.org/modems/view/en/2137/Conexant-Systems--Rockwell---Inc--AccessRunner-ADSL-Modem</link>
+		<permalink>https://h-node.org/modems/view/en/2137</permalink>
+		<created_by>https://h-node.org/modems/history/en/2137</created_by>
+	</device>
+</hardware>
+
